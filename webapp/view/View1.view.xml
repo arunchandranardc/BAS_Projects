@@ -13,12 +13,16 @@
                 <content >
                     <Bar class="UibarColor">
                         <contentLeft>
-                            <Image src="{i18n>img1}"/>
+                            <Image src="{i18n>img2}" width ="140px"/>
 
                         </contentLeft>
                         <contentMiddle>
                             <Text text="Auto Configuration Tool " class="textColorUi"></Text>
                         </contentMiddle>
+                        <contentRight>
+                            <Image src="{i18n>img1}"/>
+
+                        </contentRight>
                     </Bar>
                     <VBox alignItems="Center" class="aligncorrect">
                         <f:Card class="sapUiMediumMargin" width="300px">
