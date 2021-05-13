@@ -1,0 +1,58 @@
+<mvc:View controllerName="com.poc.automationtoolv1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:card="sap.f.cards"
+    xmlns:l="sap.ui.layout"
+    xmlns:html="http://www.w3.org/1999/xhtml">
+
+    <App id="app1">
+        <pages>
+            <Page title="{i18n>title}" showHeader="false">
+
+                <content >
+                    <Bar class="UibarColor">
+                        <contentLeft>
+                            <Image src="{i18n>img1}"/>
+
+                        </contentLeft>
+                        <contentMiddle>
+                            <Text text="Auto Configuration Tool " class="textColorUi"></Text>
+                        </contentMiddle>
+                    </Bar>
+                    <VBox alignItems="Center" class="aligncorrect">
+                        <f:Card class="sapUiMediumMargin" width="300px">
+                            <f:header>
+                                <card:Header title="Select the Company Name" iconSrc="sap-icon://customer"/>
+                            </f:header>
+
+                            <f:content>
+                                <VBox height="115px" class="sapUiSmallMargin" justifyContent="SpaceBetween">
+                                    <HBox justifyContent="SpaceBetween">
+
+                                        <ComboBox width="250px" id="profiilecomboew" placeholder="Please select the Company">
+
+                                        </ComboBox>
+                                    </HBox>
+                                    <HBox justifyContent="Center">
+
+                                        <Button id ="creatBtn" text="Create" press="onCreateprofile" type="Emphasized" class="sapUiSmallMargin"/>
+
+                                    </HBox>
+                                </VBox>
+                            </f:content>
+
+
+                        </f:Card>
+                    </VBox>
+
+
+
+                </content>
+            </Page>
+        </pages>
+    </App>
+
+
+
+</mvc:View>
